@@ -16,14 +16,14 @@ LiquidCrystal_I2C lcd(0x27, 20,4 );
 Servo myservo;
 
 #define ir_enter 2
-#define ir_back  4
+#define ir_back  3
 
-#define ir_car1 5
-#define ir_car2 6
-#define ir_car3 7
-#define ir_car4 8
-#define ir_car5 9
-#define ir_car6 10
+#define ir_car1 4
+#define ir_car2 5
+#define ir_car3 6
+#define ir_car4 7
+#define ir_car5 8
+#define ir_car6 9
 
 int S1=0, S2=0, S3=0, S4=0, S5=0, S6=0;
 int flag1=0, flag2=0; 
@@ -42,7 +42,7 @@ pinMode(ir_car6, INPUT);
 pinMode(ir_enter, INPUT);
 pinMode(ir_back, INPUT);
   
-myservo.attach(3);
+myservo.attach(10);
 myservo.write(90);
 
 lcd.begin(20, 4);  
